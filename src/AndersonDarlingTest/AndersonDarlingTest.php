@@ -12,8 +12,6 @@ namespace AndersonDarlingTest;
 class AndersonDarlingTest
 {
 
-    const STATISTICAL_SIGNIFICANCE = 0.05;
-
     /**
      * @param array $list
      *
@@ -72,7 +70,7 @@ class AndersonDarlingTest
         $s = 0.0;
 
         foreach ($data as $i => $v) {
-            $cdf = $nd->normalCdf($v, 0, 1);
+            $cdf = $nd->normalCdf($v);
 
             $i++;
 

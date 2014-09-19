@@ -5,7 +5,7 @@ namespace AndersonDarlingTest\Tests;
 use AndersonDarlingTest\NormalDistribution;
 
 /**
- * Class AndersonDarlingTest
+ * Class NormalDistributionTest
  *
  * @package AndersonDarlingTest\Tests
  *
