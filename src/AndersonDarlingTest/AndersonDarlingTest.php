@@ -60,7 +60,7 @@ class AndersonDarlingTest
     {
         $n = count($data);
         if ($n < 5) {
-            throw new \InvalidArgumentException("Sample array size needs to be more than five.");
+            throw new TooLessDataException;
         }
 
         $data = $this->normalize($data);

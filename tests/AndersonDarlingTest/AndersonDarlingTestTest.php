@@ -113,4 +113,15 @@ class AndersonDarlingTestTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($result, $normalized);
     }
 
+    /**
+     * @expectedException \AndersonDarlingTest\TooLessDataException
+     * @expectedExceptionMessage Sample array size needs to be more than five.
+     */
+    public function testTooLessData()
+    {
+        $data = array(1, 2, 3, 4);
+        $validator = new AndersonDarlingTest();
+        $validator->pValue($data);
+    }
+
 }
